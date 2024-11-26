@@ -8,10 +8,10 @@
 			"server": "DESKTOP-89O8I5L\\SQLEXPRESS",
 			"database": "AdventureWorks2017",
 			"encrypt": "mandatory",
-			"trustServerCertificate": false,
+			"trustServerCertificate": true,
 			"authenticationType": "SQL",
-			"userName": "sai",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjNzJhMmMyNC01NzBkLTQ1NzktOGNhYy1kNmM2M2Y1ZjViMDgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"userName": "sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzNjMwZGVjMy0zNzUxLTQ2NmUtOWE5NS00NGUyZDdkMGYzMGEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SHIR",
