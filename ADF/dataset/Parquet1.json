@@ -1,17 +1,9 @@
 {
 	"name": "Parquet1",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_copy",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
-			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "sink"
-			},
 			"compressionCodec": "snappy"
 		},
 		"schema": []

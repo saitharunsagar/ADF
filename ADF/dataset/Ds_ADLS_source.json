@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Cus1.csv",
 				"fileSystem": "bronze"
 			},
 			"columnDelimiter": ",",
