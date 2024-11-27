@@ -69,12 +69,14 @@
 									"partitionOption": "None"
 								},
 								"sink": {
-									"type": "ParquetSink",
+									"type": "DelimitedTextSink",
 									"storeSettings": {
 										"type": "AzureBlobFSWriteSettings"
 									},
 									"formatSettings": {
-										"type": "ParquetWriteSettings"
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
 									}
 								},
 								"enableStaging": false,
@@ -95,15 +97,12 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "csv",
+									"referenceName": "DelimitedText1",
 									"type": "DatasetReference",
 									"parameters": {
-										"schemaname": {
-											"value": "@item().schemaName",
-											"type": "Expression"
-										},
+										"schemaname": "@item().schemaName",
 										"tablename": {
-											"value": "@item().tableName",
+											"value": "@item().tablename",
 											"type": "Expression"
 										}
 									}
