@@ -62,7 +62,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "@{concat('select * from',item().schemaName,'.',item().tableName)}",
+										"value": "@{concat('select * from ',item().schemaName,'.',item().tableName)}",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
@@ -95,7 +95,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "Parquet1",
+									"referenceName": "csv",
 									"type": "DatasetReference",
 									"parameters": {
 										"schemaname": {
