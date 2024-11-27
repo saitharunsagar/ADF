@@ -1,0 +1,46 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_SQLSERVER",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CreditCardID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CardType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CardNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpMonth",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "ExpYear",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "Sales",
+			"table": "CreditCard"
+		}
+	}
+}
